@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agda</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script>@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css")</script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!--- Navbar --->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/candy-shop.png" alt="loja de doces" class="img img-thumbnail ms-3" id="nav-icon"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDropdown"
+                aria-controls="navbarDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quem-somos.html">Quem somos?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicos.html">Nossos Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Olá, Usuário!
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Meu Perfil</a></li>
+                            <li><a class="dropdown-item" href="#">Alterar Senha</a></li>
+                            <li><a class="dropdown-item" href="#">Sair</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--- Carousel --->
+    <div id="carousel" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/cake.jpg" class="d-block w-100 img-fluid" alt="bolo">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Bolos</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat consequatur magnam quia
+                        suscipit
+                        optio autem sequi sit minus, nisi commodi modi cum necessitatibus possimus maxime illo
+                        facere
+                        dolorum ab! In!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/donuts.jpg" class="d-block w-100 img-fluid" alt="dunuts">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Donuts</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat consequatur magnam quia
+                        suscipit
+                        optio autem sequi sit minus, nisi commodi modi cum necessitatibus possimus maxime illo
+                        facere
+                        dolorum ab! In!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/cup-cakes.jpg" class="d-block w-100 img-fluid" alt="cup-cakes">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Cup Cakes</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat consequatur magnam quia
+                        suscipit
+                        optio autem sequi sit minus, nisi commodi modi cum necessitatibus possimus maxime illo
+                        facere
+                        dolorum ab! In!</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+
+        <!-- Destaques -->
+    </div>
+    <!--- Destaques --->
+    <div class="container" id="destaques">
+        <div class="row mt-5">
+            <h1 class="ms-3 mt-5 lead fs-1">Aqui você pode: </h1>
+            <hr>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 mt-5 d-flex">
+                <i class="bi bi-cake text-dark fs-1 mx-3 my-auto"></i>
+                <p class="my-auto">Encomendar bolos e doces para seu evento</p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 mt-5 d-flex">
+                <i class="bi bi-coin text-dark fs-1 mx-3 my-auto"></i>
+                <p class="my-auto">Solicitar um orçamento</p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 mt-5 d-flex">
+                <i class="bi bi-shop text-dark fs-1 mx-3 my-auto"></i>
+                <p class="my-auto">Ver todos os nossos produtos</p>
+            </div>
+        </div>
+    </div>
+    <!--- Footer --->
+    <div class="text-center p-3 my-auto" id="footer">
+        © by Agda Silva | Ícone da navbar: <a href="https://www.flaticon.com/br/icones-gratis/loja-de-doces"
+            title="loja de doces ícones" class="text-decoration-none text-dark">Loja de doces</a>
+    </div>
+</body>
+
+</html>
