@@ -1,0 +1,22 @@
+#nav-icon {
+    height: 40px;
+}
+
+#carousel img {
+    opacity: 0.85;
+}
+
+#destaques {
+    height: 60vh;
+}
+
+
+#servicos .card {
+    width: 18rem;
+    height: 32rem;
+
+}
+
+#footer {
+    background-color: rgba(0, 0, 0, 0.2);
+}
